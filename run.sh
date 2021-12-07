@@ -72,7 +72,7 @@ preflight(){
         output "Virtualização: $virt_serv detectada."
     fi
     output ""
-    if [ "$virt_serv" != "" ] && [ "$virt_serv" != "kvm" ] && [ "$virt_serv" != "vmware" ] && [ "$virt_serv" != "hyperv" ] && [ "$virt_serv" != "openvz lxc" ] && [ "$virt_serv" != "xen xen-hvm" ] && [ "$virt_serv" != "xen xen-hvm aws" ]; then
+    if [ "$virt_serv" != "" ] && [ "$virt_serv" != "kvm" ] && [ "$virt_serv" != "vmware" ] && [ "$virt_serv" != "hyper123" ] && [ "$virt_serv" != "openvz lxc" ] && [ "$virt_serv" != "xen xen-hvm" ] && [ "$virt_serv" != "xen xen-hvm aws" ]; then
         warn "Tipo não compatível de virtualização detectado. Consulte seu provedor de hospedagem se o seu servidor pode executar Docker ou não. Prossiga por sua conta e risco."
         warn "Nenhum suporte será fornecido se o seu servidor quebrar a qualquer momento no futuro."
         warn "Continuar?\n[1] Sim.\n [2] Não."
